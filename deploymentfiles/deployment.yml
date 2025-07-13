@@ -3,6 +3,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: mc-app
+  namespace: default
   labels:
     app: mc-app
 spec:
@@ -20,6 +21,7 @@ spec:
         image: devopshubg333/batch13:14
         ports:
         - containerPort: 8080
+
 
   
 
